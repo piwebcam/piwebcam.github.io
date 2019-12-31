@@ -1,3 +1,5 @@
+* TOC {:toc}
+
 # Introducing PiWebcam
 
 With PiWebcam you can turn a **Raspberry Pi** into a **fully-featured, dummy-proof Webcam** with just one click.
@@ -169,6 +171,6 @@ Upon installation, the system and web password as well as the Access Point passp
 
 # About
 
-* Project Page: https://piwebcam.github.io
-* Bug Report: https://github.com/piwebcam/PiWebcam/issues
-* Instructables: https://www.instructables.com/id/Fully-featured-Outdoor-Security-Camera-Based-on-Ra/
+* Project Page: <https://piwebcam.github.io>
+* Bug Report: <https://github.com/piwebcam/PiWebcam/issues>
+* Instructables: <https://www.instructables.com/id/Fully-featured-Outdoor-Security-Camera-Based-on-Ra/>
