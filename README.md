@@ -132,3 +132,40 @@ An **upgrade functionality** is provided through the web interface as well. A zi
 When building an outdoor webcam, you might want to add to your project an external IR led board and a mechanical IR Cut filter and PiWebcam can handle all of those on your behalf. Night mode manually or automatically and for the latter a pin of the board (21 BCM) is monitored for changes; when turning HIGH, night mode is entered, when turning LOW is left. Entering night mode means turning on the IR leds (if connected) by setting HIGH a pin (26), toggling the IR CUT filter by sending a pulse to a pin (16 for OFF, 20 for ON) and adjusting camera settings for a better representation of the night scene. Keep in mind the GPIO pins cannot drive directly the IR Cut filter or the IR Leds; you would need a H-Bridge or a transistor in between to provide adequate current.
 
 Upon installation, the system and web password as well as the Access Point passphrase are all set to the default device name. Always keep in mind in PiWebcam usability has been preferred over security in most of the cases (no HTTPS, passwords stored in log files, etc.) so consider further protecting the device from a security standpoint.
+
+# Bill of Materials
+
+A sample bill of materials to build an indoor and outdoor webcam based on PiWebcam is provided below
+
+## Indoor Webcam
+
+The following sample BOM could be considered for building an indoor webcam:
+
+Item  | Cost | Link
+------  | ------| ------ 
+Raspberry Pi Zero W  | $20 | https://www.aliexpress.com/item/-/32836672820.html
+Acrylic Case | $1 | https://www.aliexpress.com/item/VONETS-Acrylic-Case-Cover-Box-Shell-Aluminum-Heatsinks-40-Pin-Connector-Header-Screwdriver-Screw-Set-for/32811914803.html
+16GB SD Card | $5 | https://www.aliexpress.com/item/Original-SanDisk-80mb-s-class-10-128gb-64gb-32gb-16gb-Ultra-memory-TF-micro-SD-Card/32689968307.html
+2.5A  Power Supply | $3 | https://www.aliexpress.com/item/5V2A-Power-Supply-Adapter-Micro-Port-Power-Charger-US-EU-UK-AU-With-ON-OFF/32520570725.html
+Camera cable for Pi Zero | $1 | https://www.aliexpress.com/item/For-Raspberry-Pi-Zero-Camera-Cable-FFC-Cable-For-Raspberry-Pi-zero-W-H-zero-1/32890256486.html
+Acrylic Camera Holder | $1 | https://www.aliexpress.com/item/Acrylic-Holder-Camera-Mount-Bracket-For-Raspberry-Pi-3-B-3-Mounting-Bracket/32902702298.html
+Raspberry Camera Night Vision with IR-CUT and Wide Angle  | $17 | https://www.aliexpress.com/item/Raspberry-Pi-3-B-IR-CUT-Camera-Night-Vision-Focal-Adjustable-5MP-Fish-Eye-Automatically-Switch/32881466491.html
+| **$48** |
+
+## Outdoor Webcam
+
+The following sample BOM could be considered for building an outdoor webcam:
+
+Item  | Cost | Link
+------  | ------| ------ 
+Raspberry Pi Zero W  | $20 | https://www.aliexpress.com/item/-/32836672820.html
+Waterproof Camera Housing  | $7 | https://www.aliexpress.com/item/CCTV-Camera-Housing-Outdoor-Bullet-Camera-s-Case-Shell-Whit-for-Security-CCTV-IR-IP-Camera/32844215710.html
+16GB SD Card | $5 | https://www.aliexpress.com/item/Original-SanDisk-80mb-s-class-10-128gb-64gb-32gb-16gb-Ultra-memory-TF-micro-SD-Card/32689968307.html
+IR Cut Double Filter | $1 | https://www.aliexpress.com/item/HD-MP-IR-CUT-filter-M12-0-5-lens-mount-double-filter-switcher-for-cctv-camera/32793880567.html
+12v - 5v buck regulator | $1 | https://www.aliexpress.com/item/Ultra-small-LM2596-power-supply-module-DC-DC-BUCK-3A-adjustable-buck-module-regulator-ultra-LM2596S/32440888820.html
+Micro USB Male plug | $1 | https://www.aliexpress.com/item/10sets-lot-Micro-5P-USB-Male-Plug-Solder-Type-Tail-Charging-Plug-90-Degree-Free-Shipping/32846969677.html
+12v Female plug | $1 | https://www.aliexpress.com/item/Tanbaby-5pcs-lot-5-5-X-2-1mm-12V-Male-and-Female-DC-Cable-Connector-Adapter/32776328118.html
+12v IR Led Array | $2 | https://www.aliexpress.com/item/52mm-diameter-4-array-IR-led-Spot-Light-Infrared-4x-IR-LED-board-DC12V-300-400mA/32904475675.html
+12v 3A Power Supply | $4 | https://www.aliexpress.com/item/5V-24V-12V-Lighting-Transformer-AC-110V-220V-to-12V-Power-Supply-1A-2A-3A-5A/32808214233.html
+Raspberry Camera Night Vision Wide Angle  | $13 | https://www.aliexpress.com/item/Raspberry-Pi-Zero-W-Camera-Module-Night-Vision-Wide-Angle-Fisheye-5MP-Webcam-with-Infrared-IR/32802572768.html
+| **$55** |
