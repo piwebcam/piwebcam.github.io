@@ -1,2 +1,11 @@
 theme: jekyll-theme-cayman
 markdown: kramdown
+title: PiWebcam
+description: Turn a Raspberry Pi into a fully-featured and dummy-proof webcam
+show_downloads: true
+github:
+  is_project_page: true
+  zip_url: https://github.com/piwebcam/PiWebcam/releases/download/v1.2/PiWebcam_v1.2.zip
+  tar_url: https://github.com/piwebcam/PiWebcam/releases/download/v1.2/PiWebcam_v1.2.zip
+  repository_url: https://github.com/piwebcam/PiWebcam
+  repository_name: PiWebcam
