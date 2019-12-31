@@ -33,7 +33,7 @@ Thanks to its powerful **motion detection** feature, augmented by an **object re
 * Ability to import/export the entire configuration of the device
 * Queue notifications when offline
 
-# Requirements
+## Requirements
 
 * Raspberry Pi Model 3 or Raspberry Pi Zero W
 * Raspberry Pi Camera (any model) or a Generic USB Camera
@@ -41,7 +41,7 @@ Thanks to its powerful **motion detection** feature, augmented by an **object re
 
 # Installation
 
-## Option 1: flash a pre-configured PiWebcam image (recommended)
+## Option 1: flash a pre-configured PiWebcam image
 
 * Download the latest PiWebcam image (.img.zip) from <https://github.com/piwebcam/PiWebcam/releases>
 * Unzip the file
@@ -81,7 +81,7 @@ Once rebooted, the device will start acting as an Access Point.
     
 Where *XXXXXX* are random characters set during the installation process (e.g. *PiWebcam-d68c2f*)
 
-## First Usage
+## Post-installation tasks
 
 Connect to the WiFi network created by the device and point your browser to http://PiWebcam.local to finalize the configuration.
 
@@ -100,10 +100,6 @@ PiWebcam already comes with reasonable default settings. Once installed, no addi
 To access the webcam and/or customize the settings, connect to the web admin panel.
 
 For a detailed description of the menus available through the web interface and CLI commands, please see the [User Guide](https://github.com/piwebcam/PiWebcam/wiki/User-Guide)
-
-# Build a real webcam based on PiWebcam
-
-
 
 # Screenshots
 
