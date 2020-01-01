@@ -127,6 +127,7 @@ For a detailed description of the menus available through the web interface and 
 * Project Page: <https://piwebcam.github.io>
 * User Guide: <https://github.com/piwebcam/PiWebcam/wiki/User-Guide>
 * Instructables: <https://www.instructables.com/id/Fully-featured-Outdoor-Security-Camera-Based-on-Ra/>
+* Download: <https://github.com/piwebcam/PiWebcam/releases>
 * Bug Report: <https://github.com/piwebcam/PiWebcam/issues>
 * Technical Overview: <https://github.com/piwebcam/PiWebcam/wiki/Technical-Overview>
 * Hardware BOM: <https://github.com/piwebcam/PiWebcam/wiki/Hardware-BOM>
