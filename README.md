@@ -43,29 +43,29 @@ Thanks to its powerful **motion detection** feature, augmented by an **object re
 
 ## Option 1: flash a pre-configured PiWebcam image
 
-* Download the latest PiWebcam image (.img.zip) from <https://github.com/piwebcam/PiWebcam/releases>
+* Download the latest PiWebcam image (PiWebcam_vX.X.img.zip) from <https://github.com/piwebcam/PiWebcam/releases>
 * Unzip the file
 * Write the image to a SD card (<https://www.raspberrypi.org/documentation/installation/installing-images/>)
 * Plug the SD card on your Raspberry Pi and power it on
+* The device will start acting as an Access Point
+* Continue with the post-installation tasks
 
 ## Option 2: build a PiWebcam image
 
-Installing PiWecam would require a fresh installation of Raspbian and a SD card. Please do not re-use an existing installation but start from scratch as listed below:
+Building a PiWebcam image requires a fresh installation of Raspbian and a SD card. Please do not re-use an existing installation but start from scratch as listed below:
 
 * Download Raspbian Stretch Lite operating system (<http://downloads.raspberrypi.org/raspbian_lite/images/raspbian_lite-2019-04-09/2019-04-08-raspbian-stretch-lite.zip>)
 * Unzip the image
 * Write the image to a SD card (<https://www.raspberrypi.org/documentation/installation/installing-images/>)
-* Download the latest release of PiWebcam (.zip) from <https://github.com/piwebcam/PiWebcam/releases>
+* Download the latest release of PiWebcam (PiWebcam_vX.X.zip) from <https://github.com/piwebcam/PiWebcam/releases>
 * Extract and copy the `PiWebcam` directory into the boot partition (on Windows, the only one accessible)
 * For a headless setup, review https://www.raspberrypi.org/documentation/configuration/wireless/headless.md
 * Plug the SD card on your Raspberry Pi, power it on and connect to it through SSH (Hostname: raspberrypi.local, Username: pi, Password: raspberry)
 * Ensure the Raspberry is connected to Internet
-* Run `sudo /boot/PiWebcam/PiWebcam.sh install`
-
-At the end of the installation you will be requested to reboot the device to make the changes fully effective.
-All the credentials will be summarized on the screen. 
-
-Once rebooted, the device will start acting as an Access Point. 
+* Run `sudo /boot/PiWebcam/PiWebcam.sh install` to set up the system and install all the dependencies
+* At the end of the installation you will be requested to reboot the device to make the changes fully effective. All the credentials will be summarized on the screen. 
+* Once rebooted, the device will start acting as an Access Point
+* Continue with the post-installation tasks
 
 ## Default Credentials
 
@@ -83,7 +83,7 @@ Where *XXXXXX* are random characters set during the installation process (e.g. *
 
 ## Post-installation tasks
 
-Connect to the WiFi network created by the device and point your browser to http://PiWebcam.local to finalize the configuration.
+Connect to the WiFi network created by the device. The passphrase of the network as well as the password of the admin user (for both the web interface and SSH) is the same as the SSID (e.g. PiWebcam-XXXXX). Point your browser to http://PiWebcam.local to finalize the configuration.
 
 To connect the webcam to an existing WiFi network, go to Device / Network, select "*WiFi Client*" and fill in your
 "*WiFi Network*" and "*Passphrase*".
